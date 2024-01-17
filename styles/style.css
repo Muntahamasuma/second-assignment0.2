@@ -116,13 +116,15 @@ span{
 
 /* Banner Section */
 .banner{
+    /* border: 2px solid red; */
     max-width: 1170px;
     margin: 0 auto; 
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Images/Banner\ img.png);
     background-repeat: no-repeat;
     border-radius: 16px;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 50px;
+    
 }
 
 .banner h1{
@@ -171,7 +173,7 @@ span{
     padding-left: 16px;
     font-size: 16px;
 }
-.submit-btn{
+button{
     height: 52px;
     border-radius: 8px;
     background: #FF5400;
@@ -180,13 +182,36 @@ span{
     color: white;
     font-size: 16px;
 }
-/* responsive */
+/* Banner responsive */
 @media screen and (max-width:600px) {
+    .banner{
+        width: 380px;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner h1{
+        font-size: 20px;
+    }
+    .banner p{
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
     .input{
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
+        width: 287px;
+        gap: 16px;
+        padding-bottom: 10px;
+        padding-left: 5px;
     }
-    
+    .select{
+        display: flex;
+    }
+    .input .select{
+        width: 230px;
+        height: 52px;
+    }
 }
 /* Main section, image+text styles*/
 .text p li{
